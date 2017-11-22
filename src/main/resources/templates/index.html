@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<!--/*@thymesVar id="id" type="int"*/-->
+<h1 th:text="|id: ${id}|" th:if="${id}%2==0"></h1>
+<p th:text="${#dates.format(#dates.createNow(), 'yyyy/MM/dd HH:mm:ss.SSS')}"></p>
+</body>
+</html>
